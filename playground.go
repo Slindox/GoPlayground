@@ -1,27 +1,16 @@
 package main
 
-//Get Programming with GO
-//Page 91
-
 import (
 	"fmt"
-	"strings"
+	"math/rand"
 )
 
-var walkOutside = true
-var takeTheBluePill = false
-
 func main() {
-	fmt.Println("You find yourself in a dimlylit cavern. ")
+	count := 0
+	for count < 10 {
+		var num = rand.Intn(10) + 1
+		fmt.Println(num)
 
-	var command = "walk outside"
-	var exit = strings.Contains(command, "outside")
-
-	fmt.Println("You leave the cave:", exit)
-
-	fmt.Println("There ist a sign near the entrance that reads 'No Minors!'.")
-	var age = 26
-	var minor = age < 18
-
-	fmt.Printf()
+		count++
+	}
 }
